@@ -2,19 +2,19 @@
 > Projeto baseado nos desafios propostos pelo Bootcamping Inter Java Develops.
 <a name="ancora"></a>
 
-|       Desafio                  |            Tema do Desafio               |  Nível do Desafio |                   Respostas                     |
-|--------------------------------|------------------------------------------|-------------------|-------------------------------------------------|
-|      [Desafio 1](#ancora1)     |    Introdução a Programação em Kotlin    |      Básico       |      [Resolução](src/desafios/Desafio1.java)    |   
-|      [Desafio 2](#ancora2)     |    Introdução a Programação em Kotlin    |      Básico       |      [Resolução](src/desafios/Desafio2.java)    |   
-|      [Desafio 3](#ancora3)     |    Introdução a Programação em Kotlin    |      Básico       |      [Resolução](src/desafios/Desafio3.java)    |   
-|      [Desafio 4](#ancora4)     |     Solucionando Problemas com Kotlin    |   Intermediário   |      [Resolução](src/desafios/Desafio4.java)    |   
-|      [Desafio 5](#ancora5)     |     Solucionando Problemas com Kotlin    |   Intermediário   |      [Resolução](src/desafios/Desafio5.java)    |   
-|      [Desafio 6](#ancora6)     |     Solucionando Problemas com Kotlin    |   Intermediário   |      [Resolução](src/desafios/Desafio6.java)    |   
-|      [Desafio 7](#ancora7)     |     Solucionando Problemas com Kotlin    |   Intermediário   |      [Resolução](src/desafios/Desafio7.java)    |   
-|      [Desafio 8](#ancora8)     |     Solucionando Problemas com Kotlin    |   Intermediário   |      [Resolução](src/desafios/Desafio8.java)    |   
-|      [Desafio 9](#ancora9)     |     Praticando Programação em Kotlin     |   Intermediário   |      [Resolução](src/desafios/Desafio9.java)    |   
-|      [Desafio 10](#ancora10)   |     Praticando Programação em Kotlin     |   Intermediário   |      [Resolução](src/desafios/Desafio10.java)   |   
-|      [Desafio 11](#ancora11)   |     Praticando Programação em Kotlin     |   Intermediário   |      [Resolução](src/desafios/Desafio11.java)   |   
+|       Desafio                  |            Tema do Desafio                   |  Nível do Desafio |                   Respostas                     |
+|--------------------------------|----------------------------------------------|-------------------|-------------------------------------------------|
+|      [Desafio 1](#ancora1)     |    Solucionando problemas básicos em Java    |      Básico       |      [Resolução](src/desafios/Desafio1.java)    |   
+|      [Desafio 2](#ancora2)     |    Solucionando problemas básicos em Java    |      Básico       |      [Resolução](src/desafios/Desafio2.java)    |   
+|      [Desafio 3](#ancora3)     |    Solucionando problemas básicos em Java    |      Básico       |      [Resolução](src/desafios/Desafio3.java)    |   
+|      [Desafio 4](#ancora4)     |        Praticando programação em Java        |   Intermediário   |      [Resolução](src/desafios/Desafio4.java)    |   
+|      [Desafio 5](#ancora5)     |        Praticando programação em Java        |   Intermediário   |      [Resolução](src/desafios/Desafio5.java)    |   
+|      [Desafio 6](#ancora6)     |        Praticando programação em Java        |   Intermediário   |      [Resolução](src/desafios/Desafio6.java)    |   
+|      [Desafio 7](#ancora7)     |        Praticando programação em Java        |   Intermediário   |      [Resolução](src/desafios/Desafio7.java)    |   
+|      [Desafio 8](#ancora8)     |        Praticando programação em Java        |   Intermediário   |      [Resolução](src/desafios/Desafio8.java)    |   
+|      [Desafio 9](#ancora9)     |         Desafios Aritméticos em Java         |     Avançado      |      [Resolução](src/desafios/Desafio9.java)    |   
+|      [Desafio 10](#ancora10)   |         Desafios Aritméticos em Java         |     Avançado      |      [Resolução](src/desafios/Desafio10.java)   |   
+|      [Desafio 11](#ancora11)   |         Desafios Aritméticos em Java         |     Avançado      |      [Resolução](src/desafios/Desafio11.java)   |   
  
   
 # <a id="ancora1"></a>[Desafio 1](#ancora)
