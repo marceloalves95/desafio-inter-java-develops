@@ -1,5 +1,5 @@
-# Desafio Bootcamping everis Kotlin Develops
-> Projeto baseado nos desafios propostos pelo Bootcamping everis Kotlin Develops.
+# Desafio Bootcamping Inter Java Develops
+> Projeto baseado nos desafios propostos pelo Bootcamping Inter Java Develops.
 <a name="ancora"></a>
 
 |       Desafio                  |            Tema do Desafio               |  Nível do Desafio |                   Respostas                     |
