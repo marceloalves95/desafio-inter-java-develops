@@ -63,109 +63,116 @@ Imprima todos os valores ímpares de 1 até X, inclusive X, se for o caso.
 |                       |          7          |
 
 # <a id="ancora4"></a>[Desafio 4](#ancora)
-Há um país denominado Lolipad, todos os habitantes ficam felizes em pagar seus impostos, pois sabem que nele não existem políticos corruptos e os recursos arrecadados são utilizados em benefício da população, sem qualquer desvio. A moeda deste país é o Loli, cujo símbolo é o R$.
+Leonardo é um nômade digital e viaja pelo mundo programando em diferentes cafés das cidades por onde passa. Recentemente, resolveu criar um blog, para compartilhar suas experiências e aprendizados com seus amigos.
 
-Lembre que, se o salário for R$ 3002.00, a taxa que incide é de 8% apenas sobre R$ 1000.00, pois a faixa de salário que fica de R$ 0.00 até R$ 2000.00 é isenta de Imposto de Renda. No exemplo fornecido (abaixo), a taxa é de 8% sobre R$ 1000.00 + 18% sobre R$ 2.00, o que resulta em R$ 80.36 no total. O valor deve ser impresso com duas casas decimais.
-Você terá o desafio de ler um valor com duas casas decimais, equivalente ao salário de uma pessoa de Loli. Em seguida, calcule e mostre o valor que esta pessoa deve pagar de Imposto de Renda, segundo a tabela abaixo.
+Para criação do blog, ele optou por utilizar uma ferramenta pronta, que há um limite de caracteres que se pode escrever por dia, e Leonardo está preocupado que essa limitação, afinal, irá impedir de contar suas melhores experiências. Para contornar esse problema, decidiu usar um sistema de abreviação de palavras em seus posts.
+
+O sistema de abreviações é simples e funciona da seguinte forma: para cada letra, é possível escolher uma palavra que inicia com tal letra e que aparece no post. Uma vez escolhida a palavra, sempre que ela aparecer no post, ela será substituída por sua letra inicial e um ponto, diminuindo assim o número de caracteres impressos na tela.
+
+Por exemplo, na frase: “hoje eu programei em Python”, podemos escolher a palavra “programei” para representar a letra ‘p', e a frase ficará assim: “hoje eu p. em Python”, economizando assim sete caracteres. Uma mesma palavra pode aparecer mais de uma vez no texto, e será abreviada todas as vezes. Note que, se após uma abreviação o número de caracteres não diminuir, ela não deve ser usada, tal como no caso da palavra “eu” acima.
 
 ## Entrada
-A entrada contém apenas um valor de ponto flutuante, com duas casas decimais.
+Haverá diversos casos de teste. Cada caso de teste é composto de uma linha, contendo uma frase de até 10⁴ caracteres. A frase é composta de palavras e espaços em branco, e cada palavra é composta de letras minúsculas ('a'-'z'), e contém entre 1 e 30 caracteres cada.
+
+O último caso de teste é indicado quando a linha dada conter apenas um “.”, o qual não deverá ser processado.
 
 ## Saída
-Imprima o texto "R$" seguido de um espaço e do valor total devido de Imposto de Renda, com duas casas após o ponto. Se o valor de entrada for menor ou igual a 2000, deverá ser impressa a mensagem "Isento".
+Para cada caso de teste, imprima uma linha contendo a frase já com as abreviações escolhidas e aplicadas.
+
+Em seguida, imprima um inteiro N, indicando o número de palavras em que foram escolhidas uma letra para a abreviação no texto. Nas próximas N linhas, imprima o seguinte padrão “C. = P”, onde C é a letra inicial e P é a palavra escolhida para tal letra. As linhas devem ser impressas em ordem crescente da letra inicial.
 
 |  Exemplos de Entrada  |  Exemplos de Saída  |    
 |-----------------------|---------------------|
-|        3002.00        |      R$ 80.36       |    
-|        1701.12        |       Isento        |
-|        4520.00        |      R$ 355.60      |
+|   abcdef abc abc abc  |   a. abc abc abc    |    
+|                       |          1          |
+|                       |   a. = abcdef       |
 
 # <a id="ancora5"></a>[Desafio 5](#ancora)
-A fórmula para calcular a área de uma circunferência é: area = π . raio2. 
+Nesse algoritmo você deverá descobrir se um conjunto de palavras é bom ou ruim. Por definição, um conjunto é bom quando nenhuma palavra desse conjunto é um prefixo de outra palavra. Caso contrário, é considerado um conjunto ruim.
 
-Considerando para este problema que π = 3.14159:
-
-Efetue o cálculo da área, elevando o valor de raio ao quadrado e multiplicando por π.
+Por exemplo, {dbc, dae, dbcde} é um conjunto ruim, pois dbc é um prefixo de dbcde. Quando duas palavras são idênticas, definimos como uma sendo prefixo da outra.
 
 ## Entrada
-A entrada contém um valor de ponto flutuante (dupla precisão), no caso, a variável raio.
+A entrada contém vários casos de teste. A primeira linha de cada caso de teste terá um inteiro N (1 ≤ N ≤ 10⁵), que representa a quantidade de palavras no conjunto. Segue então N linhas, cada uma tendo uma palavra de no máximo 100 letras minúsculas. A entrada termina quando N = 0 e não deve ser processada.
 
 ## Saída
-Apresentar a mensagem "A=" seguido pelo valor da variável area, conforme exemplo abaixo, com 4 casas após o ponto decimal. Utilize variáveis de dupla precisão (double). Como todos os problemas, não esqueça de imprimir o fim de linha após o resultado, caso contrário, você receberá "Presentation Error".
+Para cada caso de teste, você deverá imprimir "Conjunto Bom", ou "Conjunto Ruim", conforme explicado acima.
 
 |  Exemplos de Entrada  |  Exemplos de Saída  |    
 |-----------------------|---------------------|
-|         2.00          |    A=12.5664        |    
-|        100.64         |    A=31819.3103     |
-|        150.00         |    A=70685.7750     |
+|           3           |    Conjunto Ruim    |    
+|          abc          |    Conjunto Bom     |
+|          dae          |                     |
+|         abcde         |                     |
+|           2           |                     |
+|          abc          |                     |
+|          def          |                     |
+|           0           |                     |
 
 # <a id="ancora6"></a>[Desafio 6](#ancora)
-Mariazinha sabe que um Número Primo é aquele que pode ser dividido somente por 1 (um) e por ele mesmo. Por exemplo, o número 7 é primo, pois pode ser dividido apenas pelo número 1 e pelo número 7 sem que haja resto. 
-
-Então ela pediu para você fazer um programa que aceite diversos valores e diga se cada um destes valores é primo ou não. Acontece que a paciência não é uma das virtudes de Mariazinha, portanto ela quer que a execução de todos os casos de teste que ela selecionar (instâncias) aconteçam no tempo máximo de um segundo, pois ela odeia esperar.
+Encontre a maior substring comum entre as duas strings informadas. A substring pode ser qualquer parte da string, inclusive ela toda. Se não houver subseqüência comum, a saída deve ser “0”. A comparação é case sensitive ('x' != 'X').
 
 ## Entrada
-A primeira linha da entrada contém um inteiro N (1 ≤ N ≤ 200), correspondente ao número de casos de teste. Seguem N linhas, cada uma contendo um valor inteiro X (1 < X < 231) que pode ser ou não, um número primo.
+A entrada contém vários casos de teste. Cada caso de teste é composto por duas linhas, cada uma contendo uma string. Ambas strings de entrada contém entre 1 e 50 caracteres ('A'-'Z','a'-'z' ou espaço ' '), inclusive, ou no mínimo uma letra ('A'-'Z','a'-'z').
 
 ## Saída
-Para cada caso de teste imprima a mensagem “Prime” (Primo) ou “Not Prime” (Não Primo), de acordo com o exemplo abaixo.
+O tamanho da maior subsequência comum entre as duas Strings.
 
-|   Exemplos de Entrada   |  Exemplos de Saída  |    
-|-------------------------|---------------------|
-|           3             |                     |    
-|        123321           |     Not Prime       |
-|          123            |     Not Prime       |
-|          103            |       Prime         |
+|   Exemplos de Entrada    |  Exemplos de Saída  |    
+|--------------------------|---------------------|
+|        abcdef            |          2          |    
+|        cdofhij           |          1          |
+|          TWO             |          0          |
+|          FOUR            |          7          |
+|      abracadabra         |                     |
+|          open            |                     |
+|  Hey This java is hot    |                     |
+|  Java is a new paradigm  |                     |
 
 # <a id="ancora7"></a>[Desafio 7](#ancora)
-A corrida de tartarugas é um esporte que cresceu muito nos últimos anos, fazendo com que vários competidores se dediquem a capturar tartarugas rápidas, e treina-las para faturar milhões em corridas pelo mundo. 
+A nutricionista Juliana Alcantra é uma excelente profissional de sua área. Em determinado dia, ela foi entrevistada ao vivo para um jornal da cidade. No entanto, ficou um pouco nervosa na hora, e diante da situação, sua fala ficou um pouco distorcida, repetindo o final de cada palavra após dizer a mesma. Para que isso não aconteça novamente, ela precisa da sua ajuda para escrever um programa que omita a parte repetida, de modo que as palavras sejam pronunciadas como deveriam ser.
 
-Porém a tarefa de capturar tartarugas não é uma tarefa muito fácil, pois quase todos esses répteis são bem lentos. 
-
-Cada tartaruga é classificada em um nível dependendo de sua velocidade:
-
-- Nível 1: Se a velocidade é menor que 10 cm/h .
-- Nível 2: Se a velocidade é maior ou igual a 10 cm/h e menor que 20 cm/h .
-- Nível 3: Se a velocidade é maior ou igual a 20 cm/h .
-
-Sua tarefa é identificar qual o nível de velocidade da tartaruga mais veloz de um grupo.
+Escreva um programa que, dada uma palavra errada, a mesma seja corrigida.
 
 ## Entrada
-A entrada consiste de múltiplos casos de teste, e cada um consiste em duas linhas: A primeira linha contém um inteiro L (1 ≤ L ≤ 500) representando o número de tartarugas do grupo, e a segunda linha contém L inteiros Vi (1 ≤ Vi ≤ 50) representando as velocidades de cada tartaruga do grupo.
+Haverá diversos casos de teste. Cada caso de teste é formado por uma palavra, de, no máximo, 30 caracteres, dita da forma errada. A entrada termina com fim de arquivo.
 
 ## Saída
-Para cada caso de teste, imprima uma única linha indicando o nível de velocidade da tartaruga mais veloz do grupo.
+Para cada caso de teste, escreva a palavra devidamente corrigida. Analise os exemplos para verificar o padrão, de modo a consertar todos os casos.
 
-|       Exemplos de Entrada         |  Exemplos de Saída  |    
-|-----------------------------------|---------------------|
-|               10                  |                     |    
-|   10 10 10 10 15 18 20 15 11 10   |          3          |
-|               10                  |                     |
-|       1 5 2 9 5 5 8 4 4 3         |          2          |
-|               10                  |                     |
-|      19 9 1 4 5 8 6 11 9 7        |          1          |
+|   Exemplos de Entrada    |  Exemplos de Saída  |    
+|--------------------------|---------------------|
+|      sanduicheiche       |      sanduiche      |    
+|       barrilarril        |        barril       |
+|         ratoato          |         rato        |
+|          sol             |         sol         |
+|        coliseueu         |       coliseu       |
+|        queijoijo         |        queijo       |
+|       astroastro         |        astro        |
+|           a              |          a          |
 
 # <a id="ancora8"></a>[Desafio 8](#ancora)
-Ricardo e Vicente são aficionados por figurinhas. Nas horas vagas, eles arrumam um jeito de jogar um “bafo” ou algum outro jogo que envolva tais figurinhas. 
-Ambos também têm o hábito de trocarem as figuras repetidas com seus amigos e certo dia pensaram em uma brincadeira diferente. 
-Chamaram todos os amigos e propuseram o seguinte: com as figurinhas em mãos, cada um tentava fazer uma troca com o amigo que estava mais perto seguindo a seguinte regra: cada um contava quantas figurinhas tinha. 
+Pedro e Fernando são os desenvolvedores em uma stratup e vão desenvolver o novo sistema de cadastro, e pediram a sua ajuda. Sua task é fazer o código que valide as senhas que são cadastradas, para isso você deve atentar aos requisitos a seguir:
 
-Em seguida, eles tinham que dividir as figurinhas de cada um em pilhas do mesmo tamanho, no maior tamanho que fosse possível para ambos. Então, cada um escolhia uma das pilhas de figurinhas do amigo para receber. 
-
-Por exemplo, se Ricardo e Vicente fossem trocar as figurinhas e tivessem respectivamente 8 e 12 figuras, ambos dividiam todas as suas figuras em pilhas de 4 figuras (Ricardo teria 2 pilhas e Vicente teria 3 pilhas) e ambos escolhiam uma pilha do amigo para receber.
+A senha deve conter, no mínimo, uma letra maiúscula, uma letra minúscula e um número;
+A mesma não pode ter nenhum caractere de pontuação, acentuação ou espaço;
+Além disso, a senha pode ter de 6 a 32 caracteres.
 
 ## Entrada
-A primeira linha da entrada contém um único inteiro N (1 ≤ N ≤ 3000), indicando o número de casos de teste. Cada caso de teste contém 2 inteiros F1 (1 ≤ F1 ≤ 1000) e F2 (1 ≤ F2 ≤ 1000) indicando, respectivamente, a quantidade de figurinhas que Ricardo e Vicente têm para trocar.
+A entrada contém vários casos de teste e termina com final de arquivo. Cada linha tem uma string S, correspondente a senha que é inserida pelo usuário no momento do cadastro.
 
 ## Saída
-Para cada caso de teste de entrada haverá um valor na saída, representando o tamanho máximo da pilha de figurinhas que poderia ser trocada entre dois jogadores.
+A saída contém uma linha, que pode ser “Senha valida.”, caso a senha tenha cada item dos requisitos solicitados anteriormente, ou “Senha invalida.”, se um ou mais requisitos não forem atendidos.
 
-|  Exemplos de Entrada  |  Exemplos de Saída  |    
-|-----------------------|---------------------|
-|           3           |                     |    
-|         8 12          |          4          |
-|         9 27          |          9          |
-|       259 111         |          37         |
+|      Exemplos de Entrada      |  Exemplos de Saída  |    
+|-------------------------------|---------------------|
+|   Digital Innovation One      |   Senha invalida.   |    
+|         AbcdEfgh99            |    Senha valida.    |
+|   DigitalInnovationOne123     |    Senha valida.    |
+|   Digital Innovation One 123  |   Senha invalida.   |
+|           Aass9               |   Senha invalida.   |
+|          Aassd9               |    Senha valida.    |
+
 # <a id="ancora9"></a>[Desafio 9](#ancora)
 Paula simplesmente adora matemática. Seu maior passatempo é ficar inventando jogos ou atividades que a envolvam para brincar com seus amiguinhos. Obviamente, nem todos eles não são tão apaixonados assim por matemática e têm muita dificuldade para resolver as brincadeiras propostas por ela. Agora Paula inventou um pequeno passatempo que envolve 3 caracteres: um dígito numérico, uma letra e outro dígito numérico.
 
