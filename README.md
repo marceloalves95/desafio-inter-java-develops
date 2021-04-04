@@ -18,21 +18,35 @@
  
   
 # <a id="ancora1"></a>[Desafio 1](#ancora)
-Leia dois valores inteiros identificados como variáveis A e B. Calcule a soma entre elas e chame essa variável de SOMA.
-A seguir escreva o valor desta variável.
+Você receberá dois valores inteiros. Faça a leitura e em seguida calcule o produto entre estes dois valores. Atribua esta operação à variável PROD, mostrando esta de acordo com a mensagem de saída esperada (exemplo abaixo). 
 
 ## Entrada
-O arquivo de entrada contém 2 valores inteiros.
+A entrada contém 2 valores inteiros.
 
 ## Saída
-Imprima a variável SOMA com todas as letras maiúsculas, inserindo um espaço em branco antes e depois do símbolo de igualdade, seguido pelo valor correspondente à soma de A e B.
+Exiba a variável PROD conforme exemplo abaixo, tendo obrigatoriamente um espaço em branco antes e depois da igualdade.
 
 |  Exemplos de Entrada  |  Exemplos de Saída  |    
 |-----------------------|---------------------|
-|        10             |      Soma = 40      |    
-|        20             |                     |  
+|           3           |      PROD = 27      |    
+|           9           |                     |  
 
 # <a id="ancora2"></a>[Desafio 2](#ancora)
+Desenvolva um código que leia um valor E. Este E será o tamanho de um vetor X[E]. A seguir, leia cada um dos valores de X, encontre o menor elemento deste vetor e a sua posição dentro do vetor, mostrando esta informação.
+
+## Entrada
+A primeira linha de entrada contem um único inteiro E (1 < E < 1000), indicando o número de elementos que deverão ser lidos em seguida para o vetor X[E] de inteiros. A segunda linha contém cada um dos E valores, separados por um espaço.
+
+## Saída
+A primeira linha apresenta a mensagem “Menor valor:” seguida de um espaço e do menor valor lido na entrada. A segunda linha apresenta a mensagem “Posicao:” seguido de um espaço e da posição do vetor na qual se encontra o menor valor lido, lembrando que o vetor inicia na posição zero.
+
+|  Exemplos de Entrada  |  Exemplos de Saída  |    
+|-----------------------|---------------------|
+|           10          | Menor Valor:-5      |    
+| 1 2 3 4 -5 6 7 8 9 10 | Posição:4           |
+
+
+# <a id="ancora3"></a>[Desafio 3](#ancora3)
 Leia um valor inteiro X (1 <= X <= 1000). Em seguida mostre os ímpares de 1 até X, um valor por linha, inclusive o X, se for o caso.
 
 ## Entrada
@@ -43,27 +57,10 @@ Imprima todos os valores ímpares de 1 até X, inclusive X, se for o caso.
 
 |  Exemplos de Entrada  |  Exemplos de Saída  |    
 |-----------------------|---------------------|
-|           8           |         1           |    
-|                       |         3           |
-|                       |         5           |
-|                       |         7           |
-
-# <a id="ancora3"></a>[Desafio 3](#ancora3)
-Você terá o desafio de escrever um programa que leia um valor inteiro N (1 < N < 1000). Este N é a quantidade de linhas de saída que serão apresentadas na execução do programa.
-
-## Entrada
-O arquivo de entrada contém um número inteiro positivo N.
-
-## Saída
-Imprima a saída conforme o exemplo fornecido.
-
-|  Exemplos de Entrada  |  Exemplos de Saída  |    
-|-----------------------|---------------------|
-|           5           |       1 1 1         |    
-|                       |       2 4 8         |
-|                       |       3 9 27        |
-|                       |       4 16 64       |
-|                       |       5 25 125      |
+|           8           |          1          |    
+|                       |          3          |
+|                       |          5          |
+|                       |          7          |
 
 # <a id="ancora4"></a>[Desafio 4](#ancora)
 Há um país denominado Lolipad, todos os habitantes ficam felizes em pagar seus impostos, pois sabem que nele não existem políticos corruptos e os recursos arrecadados são utilizados em benefício da população, sem qualquer desvio. A moeda deste país é o Loli, cujo símbolo é o R$.
