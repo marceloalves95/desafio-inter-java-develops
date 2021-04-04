@@ -174,58 +174,61 @@ A saída contém uma linha, que pode ser “Senha valida.”, caso a senha tenha
 |          Aassd9               |    Senha valida.    |
 
 # <a id="ancora9"></a>[Desafio 9](#ancora)
-Paula simplesmente adora matemática. Seu maior passatempo é ficar inventando jogos ou atividades que a envolvam para brincar com seus amiguinhos. Obviamente, nem todos eles não são tão apaixonados assim por matemática e têm muita dificuldade para resolver as brincadeiras propostas por ela. Agora Paula inventou um pequeno passatempo que envolve 3 caracteres: um dígito numérico, uma letra e outro dígito numérico.
+Pense um número positivo n. Agora me diga um divisor A de n. Agora me dê um outro número B que não seja divisor de n. Agora um múltiplo C. E um não múltiplo D. O número que você pensou é...
 
-Se a letra for maiúscula, deve-se subtrair o primeiro dígito do segundo. Se a letra for minúscula, deve-se somar ambos os dígitos e se os DÍGITOS forem iguais, deve-se desconsiderar a letra e mostrar o produto entre os dois dígitos. Ela pediu para seu amigo Marcelo, que é bom em programação, para criar um programa para que encontre a solução para cada uma das sequências que Paula lhe apresentar.
+Parece um truque de mágica, mas é matemática! Será que, conhecendo os números A, B, C e D, você consegue descobrir qual era o número original n? Note que pode existir mais de uma solução!
+
+Neste problema, dados os valores de A, B, C e D, você deve escrever um programa que determine qual o menor número n que pode ter sido pensado ou concluir que não existe um valor possível.
 
 ## Entrada
-A entrada contém vários casos de teste. A primeira linha da entrada contém um inteiro N, indicando o número de casos de teste que virão a seguir. Cada caso de teste é uma sequência de três caracteres criada por Paula. Esta sequência contém na primeira posição um caractere de '0' a '9', na segunda posição uma letra maiúscula ou minúscula do alfabeto e na terceira posição outro caractere de '0' a '9'.
+A entrada consiste de uma única linha que contém quatro números inteiros A, B, C, e D, como descrito acima (1 ≤ A, B, C, D ≤ 109).
 
 ## Saída
-Para cada caso de teste, deve ser impressa uma linha com um valor inteiro que representa a solução da sequência proposta por Paula.
+Seu programa deve produzir uma única linha. Caso exista pelo menos um número n para os quais A, B, C e D façam sentido, a linha deve conter o menor n possível. Caso contrário, a linha deve conter -1.
 
 |  Exemplos de Entrada   |  Exemplos de Saída  |    
 |------------------------|---------------------|
-|           5            |                     |    
-|          4A5           |          1          |
-|          3A3           |          9          |
-|          4F2           |          6          |
-|          2G4           |          2          |
-|          7Z1           |          -6         |
+|       2 12 8 2         |          4          |    
+|       3 4 60 105       |          6          |
+
+
 # <a id="ancora10"></a>[Desafio 10](#ancora)
-Neste problema você é solicitado a escrever um simples programa de conversão de base. A entrada será um valor hexadecimal ou decimal. Você deverá converter cada valor da entrada. Se o valor for hexadecimal, você deve convertê-lo para decimal e vice-versa. O valor hexadecimal inicia sempre com “0x” ou também, é aquele valor cuja segunda casa contém a letra 'x'.
+Você deve fazer a leitura de 5 valores inteiros. Em seguida mostre quantos valores informados são pares, quantos valores informados são ímpares, quantos valores informados são positivos e quantos valores informados são negativos.
 
 ## Entrada
-A entrada contém vários casos de teste. Cada linha de entrada, com exceção da última, contém um número não-negativo, decimal ou hexa. O valor decimal será menor ou igual a 231. A última linha contém um número negativo que não deve ser processado, indicando o encerramento do programa.
+Você receberá 5 valores inteiros.
 
 ## Saída
-Para cada linha de entrada (exceto a última) deve ser produzido uma linha de saída. Todo número hexadecimal deve ser precedido na saída por '0x' (zero xis).
+Exiba a mensagem conforme o exemplo de saída abaixo, sendo uma mensagem por linha e não esquecendo o final de linha após cada uma.
 
-|  Exemplos de Entrada  |  Exemplos de Saída  |    
-|-----------------------|---------------------|
-|           4           |         0x4         |    
-|           7           |         0x7         |
-|          44           |         0x2C        |
-|       0x80685         |         525957      |
-|         -1            |                     |
+|  Exemplos de Entrada  |  Exemplos de Saída        |    
+|-----------------------|---------------------------|
+|          -5           |  3 valor(es) par(es)      |    
+|           0           |  2 valor(es) impar(es)    |
+|          -3           |  1 valor(es) positivo(s)  |
+|          -4           |  3 valor(es) negativo(s)  |
+|          12           |                           |
+
 # <a id="ancora11"></a>[Desafio 11](#ancora)
-Você tem em mãos dois cabos circulares de energia. O primeiro cabo tem raio R1 e o segundo raio R2. Você precisa comprar um conduite circular (veja a imagem abaixo que ilustra um conduite) de maneira a passar os dois cabos por dentro dele:
-
-Qual o menor raio do conduite que você deve comprar? Em outras palavras, dado dois círculos, qual o raio do menor círculo que possa englobar ambos os dois?
+Neste desafio sua tarefa será ler vários números e em seguida dizer quantas vezes cada número aparece, ou seja, deve-se escrever cada um dos valores distintos que aparecem na entrada por ordem crescente de valor.
 
 ## Entrada
-Na primeira linha teremos um inteiro T (T ≤ 10000), indicando o número de casos de teste.
-
-Na única linha de cada caso teremos dois números inteiros R1 e R2, indicando os respectivos raios. Os inteiros serão positivos e todas as contas caberão em um inteiro normal de 32 bits.
+A primeira linha de entrada contem um único inteiro N, que indica a quantidade de valores que serão lidos para X (1 ≤ N ≤ 2000) logo em seguida. Com certeza cada número não aparecerá mais do que 20 vezes na entrada de dados.
 
 ## Saída
-Em cada caso, imprima o menor raio possível em uma única linha
+Imprima a saída de acordo com o exemplo fornecido abaixo, indicando quantas vezes cada um deles aparece na entrada por ordem crescente de valor.
 
-|  Exemplos de Entrada  |  Exemplos de Saída  |    
-|-----------------------|---------------------|
-|           3           |                     |    
-|          1 1          |         2           |
-|          2 8          |         10          |
-|          8 2          |         10          |
+|  Exemplos de Entrada  |  Exemplos de Saída        |    
+|-----------------------|---------------------------|
+|           7           |  4 aparece 1 vez(es)      |    
+|           8           |  8 aparece 2 vez(es)      |
+|          10           |  10 aparece 3 vez(es)     |
+|           8           |  260 aparece 1 vez(es)    |
+|         260           |                           |
+|           4           |                           |
+|          10           |                           |
+|          10           |                           |
+
+
  
 
